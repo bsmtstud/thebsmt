@@ -13,8 +13,8 @@ export default defineConfig({
     allowedHosts: true
   },
   preview: {
-    port: 8080,
-    host: true
+    port: parseInt(process.env.PORT) || 8080,
+    host: '0.0.0.0'
   },
   resolve: {
     alias: {
